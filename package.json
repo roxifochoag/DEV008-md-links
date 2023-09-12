@@ -8,5 +8,11 @@
     "createdAt": "2023-06-28T16:05:09.952Z",
     "version": "6.3.0",
     "commit": "a942adeb868f1fe54b86e34cc4fc4ddb0601700d"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "fs": "^0.0.1-security",
+    "node": "^20.6.0",
+    "path": "^0.12.7"
   }
 }
