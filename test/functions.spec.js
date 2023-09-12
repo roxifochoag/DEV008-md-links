@@ -1,10 +1,18 @@
-const mdLinks = require('../index.cjs');
+const mdLinks = require('../index.js');
 const path = require ('path');
 const fs = require('fs');
 const axis = require('axios');
 
-const {rutaExistente, rutaAbsoluta, rutaDirectorio, leerContenido,retornarEstadisticas,enlacesRotos,preguntarAxiosHTTP,extraerEnlaces }= require('../functions.cjs');
-
+const {
+  rutaExistente,
+  rutaAbsoluta,
+  leerContenido,
+  retornarEstadisticas,
+  enlacesRotos,
+  preguntarAxiosHTTP,
+  extraerEnlaces,
+  isDirectory,
+} = require("../functions.js");
 
 /*---------------------------------------------*/
 //    TESTING RUTA EXISTENTE                   //
@@ -28,7 +36,7 @@ describe('Probar que la ruta sea absoluta',()=>{
 /*---------------------------------------------*/
 describe('Probar que tenga contenido en el directorio',()=>{
   it('Validar la funcion', ()=>{
-    expect(typeof rutaDirectorio).toBe('function');
+    expect(typeof isDirectory).toBe('function');
   });
 });
 /*---------------------------------------------*/
