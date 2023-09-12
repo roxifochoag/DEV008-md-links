@@ -14,5 +14,13 @@
     "fs": "^0.0.1-security",
     "node": "^20.6.0",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "babel-jest": "^29.7.0"
   }
 }
